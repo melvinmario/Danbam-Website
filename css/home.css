@@ -1,0 +1,317 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+.slider-con{
+  width: 100%;
+  position: relative;
+  display: flex;
+  margin: auto;
+}
+
+.slider{
+  height: 40rem;
+  overflow: hidden;
+}
+
+.slides{
+  display: flex;
+  position: relative;
+}
+
+.slide-btn{
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.slide-btn:hover{
+  background-color: rgba(0,0,0,0.8);
+}
+
+#rite{
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.slide{
+  width: 100%;
+  height: 40rem;
+}
+
+.slide img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.content{
+  display: flex;
+  padding: 10% 10%;
+}
+
+.content-desc{
+  width: 50%;
+  padding-right: 2vw;
+  font-size: 1.1vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media screen and (max-width: 800px) {
+  .slider{
+    height: 65vw;
+  }
+
+  .slide{
+    height: 65vw;
+  }
+}
+
+.desc-title{
+  font-size: 4.5vw;
+}
+
+#sub-title{
+  color: grey;
+}
+
+.change{
+  font-family: "Korean";
+}
+
+.red{
+  color: #CD2E3A;
+}
+
+.blue{
+  color: #0047A0;
+}
+
+.content-img{
+  width: 50%;
+  height: 40%;
+  overflow: hidden;
+  padding-left: 2vw;
+}
+
+.content-img img{
+  width: 100%;
+  object-fit: cover;
+}
+
+.break-desc{
+  text-align: justify;
+  line-height: 2em;
+  padding-top: 3vh;
+}
+
+.menu{
+  background-image: url("../assets/images/foods/bibimbap-2-blur.jpg");
+  text-align: center;
+  height: 75vh;
+  color: white;
+}
+
+.menu-con{
+  display: flex;
+  height: 75vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-content{
+  height: 23vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-top: 10vw;
+  padding-bottom: 5vw;
+}
+
+.menu-picture{
+  width: 20vw;
+  height: 20vw;
+  overflow: hidden;
+}
+
+.menu-picture img{
+  width: 20vw;
+  height: 20vw;
+  object-fit: cover;
+  object-position: 50% 50%; /* try 20px 10px */ 
+}
+
+.menu-item{
+  height: 23vw;
+}
+
+.menu-item p{
+  font-size: 2vw;
+  text-align: center;
+}
+
+.more-menu a{
+  color: black;
+  text-align: center;
+  border: solid 2px black;
+  padding: 2vw 3vw;
+  font-size: 2vw;
+}
+
+.more-menu a:hover{
+  color: white;
+  background-color: black;
+}
+
+.more-menu{
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 10vw;
+}
+
+.desc{
+  font-size: 1.2vw;
+  padding: 2vw 25vw;
+  line-height: 2vw;
+  letter-spacing: 1.5px;
+}
+
+.location{
+  background-image: url("../assets/images/arch/lokasi4-blur.jpg");
+  display: flex;
+  height: 75vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.location-content{
+  text-align: center;
+  padding-top: 3vw;
+  padding-bottom: 5vw;
+  padding-right: 2vw;
+  padding-left: 2vw;
+}
+
+.location-district{
+  letter-spacing: 2px;
+  line-height: 50px;
+}
+
+.location-district i{
+  color: #CD2E3A;
+}
+
+.location-district span{
+  color: #0047A0;
+}
+
+.location-district h2{
+  font-family: 'Korean';
+  font-size: 2.5vw;
+  padding-top: 2vw;
+}
+
+.parallax{
+  height: 75vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.title{
+  font-size: 3.5vw;
+  color: white;
+  font-weight: normal;
+  text-shadow: 2px 2px 5px gray;
+  letter-spacing: 3px;
+}
+
+.parallax:hover .title{
+  color: #ebba34;
+  -webkit-animation: glow 1.5s ease-in-out infinite alternate;
+  -moz-animation: glow 1.5s ease-in-out infinite alternate;
+  animation: glow 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #ebba34, 0 0 20px black, 0 0 30px black, 0 0 40px black, 0 0 50px black;
+  }
+}
+
+.location h1{
+  position: relative;
+  margin: auto;
+  text-align: center;
+}
+
+.see-location a{
+  color: black;
+  text-align: center;
+  border: solid 2px black;
+  padding: 2vw 3vw;
+  font-size: 2vw;
+}
+
+.see-location a:hover{
+  color: white;
+  background-color: black;
+}
+
+.see-location{
+  display: flex;
+  justify-content: space-around;
+  padding-top: 3vw;
+}
+
+@media screen and (max-width: 969px) {
+  .break-desc{
+    padding-top: 3vw;
+  }
+
+  .parallax{
+    height: 50vw;
+    background-attachment: scroll;
+  }
+
+  .menu-con{
+    height: 50vw;
+  }
+  
+  .location h1{
+    height: 50vw;
+    line-height: 45vw;
+  }
+
+  .title{
+    font-size: 6vw;
+  }
+
+  .location-district h2{
+    font-size: 5vw;
+  }
+
+  .location-district h3{
+    font-size: 2vw;
+  }
+
+  .location-district{
+    line-height: 9vw;
+  }
+}

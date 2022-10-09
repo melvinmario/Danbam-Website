@@ -1,0 +1,133 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+.slider-con{
+  width: 100%;
+  position: relative;
+  display: flex;
+  margin: auto;
+}
+
+.slider-con button{
+  font-size: 2vw;
+}
+
+.slider{
+  width: 100vw;
+  height: 33.3vw;
+  overflow: hidden;
+}
+
+.slides{
+  display: flex;
+  position: relative;
+}
+
+.slide-btn{
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 2vw;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  user-select: none;
+}
+
+.slide-btn:hover{
+  background-color: rgba(0,0,0,0.8);
+}
+
+#left{
+  border-radius: 0 1vw 1vw 0;
+}
+
+#rite{
+  right: 0;
+  border-radius: 1vw 0 0 1vw;
+}
+
+.slide{
+  width: 100vw;
+  height: 33.3vw;
+}
+
+.slide img{
+  width: 100vw;
+  height: 33.3vw;
+  object-fit: cover;
+}
+
+.topmenu{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding-top: 7vw;
+}
+
+.topmenu h1{
+    text-align: center;
+    font-size: 5vw;
+}
+
+.submenu{
+  text-align: center;
+  padding: 5vw 0vw;
+}
+
+.submenu h2{
+    font-size: 2vw;
+    font-family: 'Monserrat';
+}
+
+.menu-photo{
+  display: flex;
+  justify-content: center;
+}
+
+.menu-detail{
+  padding: 2vw 1vw;
+}
+
+.menu-detail h3{
+    font-size: 1.5vw;
+}
+
+.menu-detail h4{
+  padding: 0.5vw 0;
+  font-size: 1vw;
+}
+
+.menu-detail button{
+  font-size: 1vw;
+  
+}
+
+.menu-detail button:hover{
+  background-color: rgba(0,0,0,0.6);
+}
+
+.photo-crop{
+  height: 20vw;
+  width: 20vw;
+  overflow: hidden;
+  border-radius: 5vw;
+  padding: 0.5vw 0;
+}
+
+.photo-crop img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+button{
+  background-color: black;
+  padding: 1vw;
+}

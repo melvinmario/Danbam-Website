@@ -1,0 +1,198 @@
+.banner{
+  text-align: center;
+  font-weight: bold;
+  background-image: url(../assets/images/banner-about-us.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 40vw;
+  color: white;
+  font-size: 2vw;
+}
+
+.banner-con{
+  display: flex;
+  flex-flow: row;
+  justify-content:center;
+  align-items:center;
+}
+
+.hr-con{
+  width: 10vw;
+  
+}
+
+.banner h1{
+  font-family: 'Korean';
+  font-size: 7vw;
+  padding-top: 16vw;
+  color:black;
+  -webkit-text-stroke: 0.2px white;
+}
+
+.banner-sosmed{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-icon{
+  margin-left: 30vw;
+  margin-right: 30vw;
+  justify-content: center;
+  text-align: center;
+}
+
+.icon{
+  padding: 2vw 1vw;
+}
+
+.history-con{
+  display: flex;
+  margin: 5vw 5vw;
+}
+
+.history{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.history h1{
+  font-size: 3vw ;
+  padding-bottom: 1vw;
+}
+
+.history p{
+  font-size: 1.2vw;
+  text-align: left;
+}
+
+.history-photo{
+  display: flex;
+}
+
+.photo{
+  width: 20vw;
+  height: 20vw;
+  padding: 1vw;
+}
+
+.photo img{
+  width: 20vw;
+  height: 20vw;
+  object-fit: cover;
+}
+
+.gallery{
+  text-align: center;
+  padding: 5vw 12vw;
+}
+
+.gallery-title h1{
+    font-size: 3vw ;
+    padding-bottom: 1vw;
+}
+
+.gallery-atas{
+  display: flex;
+  justify-content: space-around;
+  padding-top: 2vw;
+  padding-bottom: 2vw;
+}
+
+.gallery-bawah{
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 2vw;
+}
+
+.gallery-atas img{
+  width: 30vw;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+.gallery-bawah img{
+  width: 30vw;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+.gallery:hover img{
+  filter: none;
+}
+
+.staytune{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url(../assets/images/seoul-blur.jpg);
+  color: white;
+  text-align: center;
+  height: 40vw;
+}
+
+.staytune-con{
+  line-height: 3vw;
+}
+
+.staytune-con h1{
+    font-size: 3.5vw;
+}
+
+input[type=email]{
+  width: 15vw;
+  height: 3vw;
+}
+
+input[type=submit]{
+  width: 5vw;
+  height: 3.2vw;
+  background-color: black;
+  color: white;
+}
+
+.parallax{
+  height: 75vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media screen and (max-width: 969px) {
+  .banner{
+    height: 50vw;
+  }
+
+  .staytune{
+    height: 50vw;
+  }
+
+  .staytune-con{
+    line-height: 5vw;
+  }
+
+  .staytune-con h1{
+    font-size: 5vw;
+  }
+
+  .staytune p{
+    font-size: 2vw;
+  }
+
+  input[type=email]{
+    width: 30vw;
+    height: 3vw;
+    font-size: 2vw;
+  }
+  
+  input[type=submit]{
+    width: 10vw;
+    height: 4.5vw;
+    font-size: 2vw;
+    background-color: black;
+    color: white;
+  }
+}

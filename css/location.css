@@ -1,0 +1,104 @@
+
+.location{
+  background-image: url("../assets/images/arch/lokasi4-blur.jpg");
+  display: flex;
+  height: 75vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.location-content{
+  text-align: center;
+  padding-top: 3vw;
+  padding-bottom: 5vw;
+  padding-right: 2vw;
+  padding-left: 2vw;
+}
+
+.location-district{
+  letter-spacing: 2px;
+  line-height: 50px;
+}
+
+.location-district i{
+  color: #CD2E3A;
+}
+
+.location-district span{
+  color: #0047A0;
+}
+
+.location-district h2{
+  font-family: 'Korean';
+  font-size: 3.5vw;
+  padding-top: 2vw;
+  padding-bottom: 2vw;
+}
+
+.location-district img{
+  width: 60vw;
+}
+
+.parallax{
+  height: 75vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.title{
+  font-size: 3.5vw;
+  color: white;
+  font-weight: normal;
+  text-shadow: 2px 2px 5px gray;
+  letter-spacing: 3px;
+}
+
+.parallax:hover .title{
+  color: #ebba34;
+  -webkit-animation: glow 1.5s ease-in-out infinite alternate;
+  -moz-animation: glow 1.5s ease-in-out infinite alternate;
+  animation: glow 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #ebba34, 0 0 20px black, 0 0 30px black, 0 0 40px black, 0 0 50px black;
+  }
+}
+
+.location h1{
+  position: relative;
+  margin: auto;
+  text-align: center;
+}
+
+@media screen and (max-width: 969px) {
+  .parallax{
+    height: 50vw;
+    background-attachment: scroll;
+  }
+
+  .location h1{
+    height: 50vw;
+    line-height: 45vw;
+  }
+
+  .title{
+    font-size: 6vw;
+  }
+
+  .location-district h2{
+    font-size: 4.5vw;
+  }
+
+  .location-district h3{
+    font-size: 2vw;
+  }
+
+  .location-district{
+    line-height: 9vw;
+  }
+}

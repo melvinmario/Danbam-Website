@@ -1,0 +1,176 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+@font-face {
+  font-family: Korean;
+  src: url(../assets/font/korean_calligraphy/Korean_Calligraphy.ttf);
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url(assets/montserrat-font/Montserrat-Regular.otf);
+  font-weight: normal;
+}
+
+
+@font-face {
+  font-family: Montserrat;
+  src: url(assets/montserrat-font/Montserrat-Bold.otf);
+  font-weight: bold;
+}
+
+  
+a{
+  text-decoration: none;
+  color: white;
+}
+
+.address{
+  color: white;
+  background-color: black;
+  text-align: center;
+  padding-top: 2vh;
+  width: 100%;
+  font-size: 1vw;
+  height: 2vw;
+}
+
+nav{
+  color: white;
+  padding: 0 2vw;
+  background-color: black;
+}
+
+button{
+  color: white;
+  background-color: transparent;
+  border: none;
+}
+
+.navbar{
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  height: 10vw;
+}
+
+.nav-logo{
+  padding: 0px 20px 20px 10px;
+}
+
+.nav-menu{
+  padding: 10px 20px;
+}
+
+.nav-logo img{
+  width: 8vw;
+}
+
+.nav-menu i{
+  color: white;
+  font-size: 3vw;
+  background-color: none;
+}
+
+.nav-menu button:hover{
+  opacity: 0.75;
+}
+
+.drop-menu{
+  position: absolute;
+  background-color: black;
+  float: right;
+  width: 20vw;
+  text-align: center;
+  line-height: 50px;
+  font-size: 20px;
+  height: 85vh;
+  right: 0;
+  top: 12vw;
+  z-index: 10;
+}
+
+footer p{
+  font-family: 'Korean';
+  color: white;
+  padding-left: 20px;
+}
+  
+footer{
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  height: 2vw;
+  align-items: center;
+  padding: 20px;
+}
+
+.sosmed a{ 
+  padding: 0px 20px;
+  font-size: 25px;
+  color: white;
+}
+
+i{
+  color: white;
+}
+
+.padding-10{
+  padding-top: 20px;
+}
+
+.padding-10 a:hover{
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 1024px) {
+  .navbar{
+    height: 12vw;
+  }
+
+  .nav-logo img{
+    width: 10vw;
+  }
+
+  .drop-menu{
+    width: 100%;
+    top: 15.5vw;
+    height: 55vw;
+    font-size: 3vw;
+    line-height: 7vw;
+  }
+
+  .nav-menu i{
+    font-size: 4vw;
+  }
+
+  .fa-copyright{
+    font-size: 1vh;
+  }
+
+  .sosmed a{ 
+    font-size: 3vw;
+  }
+
+  footer p{
+    font-size: 2.5vw;
+  }
+
+  .sosmed a{ 
+    padding: 0px 5px;
+  }
+}
+
+
+@media screen and (max-width: 969px) {
+  .drop-menu{
+    height: 70vw;
+    line-height: 7vw;
+  }
+}
