@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/headerfooter.css">
+  <link rel="stylesheet" href="./css/contactus.css">
+  <script src="https://kit.fontawesome.com/79b4ca60a2.js" crossorigin="anonymous"></script>
+  <title>Contact Us</title>
+</head>
+<body>
+  <header>
+    <div class="address"> 
+      <p>단밤에 오신 것을 환영합니다</p>
+    </div>
+    <nav>
+      <div class="navbar">
+        <div class="nav-logo">
+          <a href="./index.html"><img src="./assets/images/logo.png" alt=""></a>
+        </div>
+        <div class="nav-menu">
+          <button id="menu-bar"><i class="fa fa-bars"></i></button>
+        </div>
+      </div>
+      <div class="drop-menu">
+        <div class="drop-content">
+          <div class="padding-10"><a href="./index.html">Home</a></div>
+          <div class="padding-10"><a href="./menu.html">Menu</a></div>
+          <div class="padding-10"><a href="./aboutus.html">About Us</a></div>
+          <div class="padding-10"><a href="./location.html">Location</a></div>
+          <div class="padding-10"><a href="./contactus.html">Contact Us</a></div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <div class="contact">
+    <div class="contact-container">
+        <h2>Contact Us</h2>
+        <div class="contact-content">
+            <form name="contact-us" action="" method="POST" onsubmit="return validateForm()">
+                <div class="row">
+                  <label for="name">Name</label>
+                  <input type="text" name="name" id="name" placeholder="Input your name">
+                </div>  
+                <div class="row">
+                  <label for="email">Email</label>
+                  <input type="email" name="email" id="email" placeholder="Input your email">
+                </div>
+                <div class="row">
+                  <label for="gender">Gender</label>
+                  <input type="radio" name="gender" id="male">Male
+                  <input type="radio" name="gender" id="female">Female
+                </div>
+                <div class="row">
+                  <label for="branch">DanBam branch:</label>
+                  <select id="branch" name="branch" aria-placeholder="Choose">
+                    <option value="null">Choose</option>
+                    <option value="yongsan">Yongsan-gu</option>
+                    <option value="hongdae">Hongdae</option>
+                    <option value="gangnam">Gangnam-gu</option>
+                    <option value="busan">Busan</option>
+                  </select> 
+                </div>
+                <div class="row">
+                  <label for="message">Message</label>
+                  <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                </div>
+                <div class="row r-checkbox">
+                  <input type="checkbox" name="checkbox" value="check" id="agree" />
+                  <p class="p-terms">Subscribe for Danbam's latest informations.</p>
+                </div>
+                <div id="errorDiv">
+                  <p id="errorMsg"></p>
+                </div>
+                <div class="row">
+                  <input type="submit" value="Submit">
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+  <footer>
+    <p><i class="fa fa-copyright"></i> Copyright by Danbam</p>
+    <div class="sosmed"> 
+      <a href=""><i class="fa fa-facebook"></i></a>
+      <a href=""><i class="fab fa-instagram"></i></a>
+      <a href=""><i class="fab fa-twitter"></i></a>
+      <a href=""><i class="fab fa-tiktok"></i></a>
+    </div>
+  </footer>
+
+  <script src="./js/jquery-latest.min.js"></script>
+  <script src="./js/headerfooter.js"></script>
+  <script src="./js/contact-us.js"></script>
+</body>
+</html>
